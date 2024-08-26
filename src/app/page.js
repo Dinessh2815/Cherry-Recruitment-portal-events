@@ -8,7 +8,7 @@ const Page = () => {
         <img
           src="/eventsdetails.png"
           alt="eventsdetails"
-          className="w-full h-auto"
+          className="w-full h-full object-contain"
         />
       </div>
 

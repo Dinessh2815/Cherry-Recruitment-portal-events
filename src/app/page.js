@@ -2,18 +2,19 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full h-screen">
+    <div className="flex flex-col md:flex-row w-full min-h-screen overflow-y-auto">
       {/* Left Section */}
-      <div className="flex flex-col w-full md:w-1/2 items-center justify-center h-1/2 md:h-full">
-        <img
-          src="/eventsdetails.png"
-          alt="eventsdetails"
-          className="w-full h-full object-contain"
+      <div className="relative flex items-center justify-center w-full md:w-1/2 h-auto md:h-screen">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/leftevents.png')",
+          }}
         />
       </div>
 
       {/* Right Section with Full Background */}
-      <div className="relative flex items-center justify-center w-full md:w-1/2 h-1/2 md:h-full">
+      <div className="relative flex items-center justify-center w-full md:w-1/2 h-auto md:h-screen">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
